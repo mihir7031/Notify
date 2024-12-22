@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Schedules"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Button to find documents -->
+    <Button
+        android:id="@+id/findDocumentsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Documents"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Button to upload documents -->
+    <Button
+        android:id="@+id/uploadDocumentsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Documents"
+        android:layout_marginBottom="20dp"/>
+
+</LinearLayout>

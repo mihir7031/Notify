@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img"
+        android:scaleType="centerCrop"
+        android:contentDescription="Background Image"/>
+
+    <!-- Your other views on top of the background -->
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/logo"
+        />
+
+    <TextView
+        android:id="@+id/profilename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@id/profile_image"
+        android:layout_marginStart="20dp"
+        android:text="@string/profilename"
+        android:textColor="#8E24AA"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/studentid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profilename"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/profile_image"
+        android:text="@string/id_number"
+        android:textColor="#8E24AA"
+        android:textSize="18sp" />
+
+    <GridLayout
+        android:id="@+id/dashboard_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_marginTop="75dp"
+        android:columnCount="3"
+        android:padding="16dp"
+        android:rowCount="4">
+
+        <!-- Dashboard Item 1 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/notification"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/announcement" />
+
+            <TextView
+                android:id="@+id/notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/upload_notice"
+                android:textColor="#16247A"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Repeat similar blocks for each dashboard item -->
+        <!-- Dashboard Item 2 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/Notifications"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/notification" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/notifications"
+                android:textColor="#16247A"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+<!--        &lt;!&ndash; Dashboard Item 3 &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="vertical"-->
+<!--            android:padding="16dp"-->
+<!--            tools:ignore="UseCompoundDrawables">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:src="@drawable/eventposture"-->
+<!--                tools:ignore="ContentDescription" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:text="@string/upload_event_posture"-->
+<!--                android:textColor="#16247A"-->
+<!--                android:textSize="14sp" />-->
+<!--        </LinearLayout>-->
+
+        <!-- Repeat for the remaining items -->
+        <!-- Dashboard Item 4 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+
+                android:id="@+id/updatenotice"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/img_1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Update Notice"
+                android:textColor="#16247A"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Dashboard Item 5 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/semester_schedule"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/img_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Schedule"
+                android:textColor="#16247A"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Dashboard Item 6 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/calender"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/calendar"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Upload Schedule"
+                android:textColor="#16247A"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dashboard_grid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/logout"
+        android:textColor="#CC2D2D"
+        android:textSize="16sp" />
+</RelativeLayout>

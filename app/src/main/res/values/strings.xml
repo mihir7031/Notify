@@ -1,0 +1,54 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Notify</string>
+    <string name="tagline">Stay Informed, Stay Notified!</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">   Email</string>
+    <string name="default_web_client_id">YOUR_CLIENT_ID.apps.googleusercontent.com</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_log_in">Login</string>
+    <string name="mail">Enter Mail ID</string>
+    <string name="student_id">Enter a student ID</string>
+    <string name="passwd">Password</string>
+    <string name="app_name_short">CNS</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="or_signup_text">Do not have an account already?</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="emp_id">Employee Id.</string>
+    <string name="play_services_error">Seems like your device is not supported for Google Play Services</string>
+    <string name="play_services_cancelled">Google Play Service must be Installed or Enabled</string>
+    <string name="network_error">Please turn on your Mobile Data or connect to a WiFi network</string>
+    <string name="wrong_Input">Error Signing In, try rechecking password</string>
+    <string name="sign_in_error">An error occurred while Signing In, please try later to resolve</string>
+    <string name="empty_fields">Please fill the field(s)</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="sign_up_error">An error occurred while creating account. Please retry later to resolve.</string>
+    <string name="invalid_fields">Please fill in the fields correctly</string>
+    <string name="or_signin_text">Have an account already?</string>
+    <string name="password_rules">
+        - Lowercase character (a-z)\n
+        - Uppercase character (A-Z)\n
+        - Digit (0-9)\n
+        - Special character (!@#$&amp;^+=\-*,._?)
+    </string>
+    <string name="welcome" tools:ignore="DuplicateDefinition">Welcome to CNS</string>
+    <string name="create_notice">+</string>
+    <string name="create_notice_text">Tap on + below to create a notice</string>
+    <string name="title">Title</string>
+    <string name="create_not_title">Create Notice</string>
+    <string name="description">Description</string>
+
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="profilename">Profile Name</string>
+    <string name="id_number">Id Number</string>
+    <string name="upload_notice">Upload Notice</string>
+    <string name="notifications">Notifications</string>
+    <string name="upload_event_posture">Upload Event Posture</string>
+    <string name="delete_notifice">Delete Notifice</string>
+    <string name="book_auditoriam">Book Auditoriam</string>
+    <string name="calendar">Calendar</string>
+    <string name="logout">Logout</string>
+</resources>

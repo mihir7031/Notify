@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "301397672842",
+    "project_id": "notify-dfc6f",
+    "storage_bucket": "notify-dfc6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301397672842:android:637e27e44a3a3ce5793e73",
+        "android_client_info": {
+          "package_name": "com.example.notify"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGdLr5Ayfq3Mw7U3xAuMMhUKvRXlzwN6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
